@@ -1,0 +1,19 @@
+<% for(let i=0; i < doctornames.length; i++) {%>
+    <% let xyz = "/users/chatroom/" + doctoruser[i] + "?name=" + name %>
+    <% let departments = ['Pediatrician', 'General Physician', 'Dentist', 'Orthopedic'] %>
+    <% let deptdesc = ['Manages the physical, behavioral, and mental care for children from birth until age 18.',
+                       'Highly trained specialist providing a range of non-surgical health care to patients.',
+                       'Specializes in the diagnosis, prevention, and treatment of diseases of the oral cavity.',
+                       'Specializes in the musculoskeletal system - the bones, joints, ligaments, tendons, and muscles.'] %>
+    <% let y = departments.indexOf(doctordept[i]); %>
+    <% let desc = deptdesc[y]; %>
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header"><%= doctordept[i] %></div>
+        <div class="card-body">
+            <h5 class="card-title"><%= doctornames[i] %></h5>
+            <p class="card-text"><%= desc %><br><br><u>Years of Experience: <%= doctoryoexp[i] %></u></p>
+            <button class="pull-right btn btn-block btn-danger"><a class="con" href=<%= xyz %>>Consult</a></button>
+        </div>
+    </div>
+<% } %>

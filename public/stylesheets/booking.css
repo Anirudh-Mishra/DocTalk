@@ -1,0 +1,27 @@
+body {
+    background: url("https://t3.ftcdn.net/jpg/04/43/46/96/360_F_443469689_duAGfG5ahV230UTiRtr4sYgQ8COXkx3e.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+h1 {
+    padding-top: 2%;
+    color: black;
+}
+
+h1:hover {
+    color: black;
+}
+
+.card {
+    margin-top: 5%;
+    float: left;
+    margin-left: 14%;
+}
+
+a:link, :hover, :active, :visited {
+    color:antiquewhite;
+    text-decoration: none;
+}

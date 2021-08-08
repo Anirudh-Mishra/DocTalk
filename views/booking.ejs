@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/stylesheets/booking.css">
+<link rel="stylesheet" href="/stylesheets/home.css">
+<!-- Navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Transparent Nav</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="/users/home" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                    <%- include ("./partials/details"); %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<br><br><br>
+<h1 style="margin-left:40%">Available Doctors</h1>
+    
+<div class="container">
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header">Pediatrician</div>
+        <div class="card-body">
+            <h5 class="card-title">Dr Raj Sharma</h5>
+            <p class="card-text">Manages the physical, behavioral, and mental care for children from birth until age 18.<br><br><u>Years of Experience: 2</u></p>
+            <button class="pull-right btn btn-block btn-danger"><a class="con" href="/users/chatroom">Consult</a></button>
+        </div>
+    </div>
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header">General Physician</div>
+        <div class="card-body">
+            <h5 class="card-title">Dr Abhishek Kumar</h5>
+            <p class="card-text">Highly trained specialist providing a range of non-surgical health care to patients.<br><br><u>Years of Experience: 5</u></p>
+            <button class="pull-right btn btn-block btn-danger"><a class="con" href="/users/chatroom">Consult</a></button>
+        </div>
+    </div>
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header">Dentist</div>
+        <div class="card-body">
+            <h5 class="card-title">Dr Vivek Kapoor</h5>
+            <p class="card-text">Specializes in the diagnosis, prevention, and treatment of diseases of the oral cavity.<br><br><u>Years of Experience: 2</u></p>
+            <button class="pull-right btn btn-block btn-danger"><a class="con" href="/users/chatroom">Consult</a></button>
+        </div>
+    </div>
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header">Orthopedic</div>
+        <div class="card-body">
+            <h5 class="card-title">Dr Nandini Tripathi</h5>
+            <p class="card-text">Specializes in the musculoskeletal system - the bones, joints, ligaments, tendons, and muscles.<br><br><u>Years of Experience: 7</u></p>
+            <button class="pull-right btn btn-block btn-danger"><a class="con" href="/users/chatroom">Consult</a></button>
+        </div>
+    </div>
+
+    <%- include ("./partials/onlinedocs.ejs"); %>
+</div>

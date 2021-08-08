@@ -1,0 +1,90 @@
+.container1 {
+  margin: 10% 20%;
+  height: 500px;
+}
+
+#box2 {
+  width: 100%;
+	height: 100%;
+  padding: 1%;
+  border: solid;
+	border-radius: 25px;
+  border-color: black;
+  position: relative;
+  background-color: #bbd8fc;
+}
+
+.heading {
+  margin-bottom: 3%;
+  background-color: grey;
+  width: 890px;
+  padding-left: 8px;
+  border-radius: 10px;
+  position: fixed;
+}
+
+/* Chat containers */
+.container2 {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 48%;
+  padding: 10px;
+  margin: 10px 10px;
+}
+  
+  /* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+  margin-left: 50%;
+  width: 48%;
+}
+
+.joining {
+  border: 2px solid #878888;
+  background-color: #e1fffb;
+  border-radius: 5px;
+  width: 50%;
+  padding-top: 10px;
+  text-align: center;
+  margin-left: 230px;
+  margin-top: 10px;
+}
+
+/* Clear floats */
+.container2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+
+#container3 {
+  height: 50vh;
+  overflow-y: auto;
+}
+
+#typebox{
+  margin-top: 15px;
+  width: 93.5%;
+  border-radius: 5px;
+  border-style: solid;
+  background-color: #bbd8fc;
+}
+
+#send{
+  border-radius: 5px;
+  background-color: #bbd8fc;
+}
